@@ -1,4 +1,6 @@
-public class Main {
+package hw1;
+
+public class Task1 {
     public static void main(String[] args) {
         String name = "Olga";
         String surname = "Gostieva";

@@ -1,4 +1,6 @@
-public class Mod1 {
+package hw2;
+
+public class Task3 {
 
     public static void main(String[] args) {
         double a =-12;

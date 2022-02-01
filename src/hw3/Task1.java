@@ -1,4 +1,6 @@
-public class Main3 {
+package hw3;
+
+public class Task1 {
     public static void main(String[] args) {
         String text = "Hello students";
         System.out.println(isPalindrome(text));

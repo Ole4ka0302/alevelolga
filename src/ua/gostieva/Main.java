@@ -1,4 +1,4 @@
-package com.company;
+package ua.gostieva;
 
 public class Main {
 
