@@ -34,6 +34,7 @@ public class Task2_3 {
                 for (int j = 2; j <= number; j++) {
                     if (number % j == 0) {
                         multi++;
+                        break;
                     } else {
                         prime++;
                     }
