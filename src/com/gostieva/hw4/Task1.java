@@ -1,4 +1,4 @@
-package hw4;
+package com.gostieva.hw4;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -23,8 +23,8 @@ public class Task1 {
         double middle = 0;
         if (numbers.length > 0) {
             double sum = 0;
-            for (int i = 0; i < numbers.length; i++) {
-                sum += numbers[i];
+            for (int number : numbers) {
+                sum += number;
             }
             middle = sum / numbers.length;
         }
@@ -35,8 +35,8 @@ public class Task1 {
         double middle = 0;
         if (numbers.length > 0) {
             double mult = 1.0;
-            for (int i = 0; i < numbers.length; i++) {
-                mult *= numbers[i];
+            for (int number : numbers) {
+                mult *= number;
             }
             middle = Math.pow(mult, 1.0/ numbers.length);
         }

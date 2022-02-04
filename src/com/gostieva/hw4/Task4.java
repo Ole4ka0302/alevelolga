@@ -1,4 +1,4 @@
-package hw4;
+package com.gostieva.hw4;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package hw4;
+package com.gostieva.hw4;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -6,12 +6,10 @@ import java.util.Random;
 
 public class Task2_3 {
     public static void main(String[] args) {
-        int[] numbers = new int[10];
+        int[] numbers = new int[1000];
         fillRandomArray(numbers);
         System.out.println(Arrays.toString(numbers));
         calcPrimeAndMulti(numbers);
-        System.out.println();
-
     }
 
     private static void fillRandomArray(int[] array) {
@@ -25,24 +23,28 @@ public class Task2_3 {
         if (numbers.length == 0) {
             throw new RuntimeException(" Array has size 0.");
         }
-        int multi = 0;
-        int prime = 0;
+        int countPrime = 0;
+        int countMulti = 0;
         for (int number : numbers) {
-            if (number <= 1)
-                break;
-            else {
-                for (int j = 2; j <= number; j++) {
+            boolean isPrime = true;
+            if (number <= 1) {
+                isPrime = false;
+            } else {
+                for (int j = 2; j <= number / 2; j++) {
                     if (number % j == 0) {
-                        multi++;
+                        isPrime = false;
+                        countMulti++;
                         break;
-                    } else {
-                        prime++;
                     }
                 }
             }
+            if (isPrime) {
+                countPrime++;
+            }
+
         }
-        System.out.println(multi);
-        System.out.println(prime);
+        System.out.println(countPrime + " Простые числа");
+        System.out.println(countMulti + " Составные числа");
     }
 }
 
