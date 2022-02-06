@@ -34,11 +34,11 @@ public class Task1 {
     private static double findMiddleOfNumOfArray(int[] numbers) {
         double middle = 0;
         if (numbers.length > 0) {
-            double mult = 1.0;
+            double multi = 1.0;
             for (int number : numbers) {
-                mult *= number;
+                multi *= number;
             }
-            middle = Math.pow(mult, 1.0/ numbers.length);
+            middle = Math.pow(multi, 1.0/ numbers.length);
         }
         return middle;
     }

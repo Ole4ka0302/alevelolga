@@ -9,7 +9,6 @@ public class Task4 {
         fillRandomArray(numbers);
         System.out.println(Arrays.toString(numbers));
         fillArrayNulls(numbers);
-        System.out.println(Arrays.toString(numbers));
     }
 
     private static void fillRandomArray(int[] array) {
@@ -20,11 +19,15 @@ public class Task4 {
     }
 
     private static void fillArrayNulls(int[] numbers) {
-        int nulls=0;
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] % 2 == 0) {
-                numbers[i] = nulls;
+        int nulls = 0;
+        int[] newNumbers = numbers.clone();
+        for (int i = 0; i < newNumbers.length; i++) {
+            if (newNumbers[i] % 2 == 0) {
+                newNumbers[i] = nulls;
             }
         }
+        System.out.println(Arrays.toString(newNumbers));
     }
+
 }
+
