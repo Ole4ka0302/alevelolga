@@ -31,15 +31,18 @@ public class Task1_2 {
     }
 
     private static void checkForDisorder(int[][] numbers) {
-        System.out.println(Arrays.deepToString(numbers));
-
-        for (int i = 0; i < numbers.length; i++) {
-            for (int j = 0; j < numbers[i].length; j++) {
-
+        boolean checkFor = true;
+        for (int[] number : numbers) {
+            for (int j = 0; j < number.length - 1; j++) {
+                if (number[j + 1] > number[j]) {
+                    checkFor = false;
+                    break;
+                }
             }
         }
-
+        System.out.println(!checkFor);
 
     }
-
 }
+
+
