@@ -15,9 +15,10 @@ public class Task1 {
     private static void fillRandomArray(int[] array) {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(1,11);
+            array[i] = random.nextInt(1,10);
         }
     }
+
 
     private static double findMiddleOfNumArray(int[] numbers) {
         double middle = 0;
@@ -38,7 +39,7 @@ public class Task1 {
             for (int number : numbers) {
                 multi *= number;
             }
-            middle = Math.pow(multi, 1.0/ numbers.length);
+            middle = Math.pow(multi, 1.0 / numbers.length);
         }
         return middle;
     }
