@@ -34,7 +34,8 @@ public class Task3 {
                 newNumbers[j][i] = array[i][j];
             }
         }
-        System.out.println(Arrays.deepToString(newNumbers));
+        for (int i = 0; i < array.length; i++)
+            System.out.println(Arrays.toString(newNumbers[i]));
     }
 }
 
