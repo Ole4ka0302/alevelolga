@@ -1,7 +1,5 @@
 package com.gostieva.hw10;
 
-import com.gostieva.hw7.Recovery;
-
 public class Car {
     public String series;
     public int year;
